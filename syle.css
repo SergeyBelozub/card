@@ -340,16 +340,26 @@ template {
   display: none;
 }
 .card {
-  padding-top: 100px;
+  padding-top: 200px;
 }
+
 .container {
+  /* @media screen and (max-width: 767px) { */
+  display: flex;
+  justify-content: center;
+  margin-left: -34px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  /* } */
 }
 .card-container {
+  width: calc(100% / 3 - 34px);
+  margin-left: 34px;
+  margin-top: 50px;
   margin: 0 auto;
-  /* width: 280px; */
+  min-width: 224px;
+  max-width: 394px;
   background: #ffb8ca;
   border-radius: 24px;
   padding: 160px 40px 60px 40px;
