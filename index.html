@@ -23,26 +23,24 @@
   <body>
     <section class="card">
       <div class="container">
-        
-          <!--Обертка для карточки-->
-          <div class="cart">
-            <!--Сама карточка -->
+        <!--Обертка для карточки-->
+        <div class="cart" id="image">
+          <!--Сама карточка -->
 
-            <div class="front">
-              <h1 class="card-title">ice cream</h1>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et
-              </p>
-              <button id="rotate" class="card-btn" type="button"></button>
-            </div>
-
-            <div class="back">
-              <p class="card-text">описание карточки</p>
-              <button class="card-btn" type="button"></button>
-            </div>
+          <div class="front">
+            <h1 class="card-title">ice cream</h1>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <div id="btn" class="card-btn" type="button"></div>
           </div>
-       
+
+          <div class="back" id="image">
+            <p class="card-text">описание карточки</p>
+            <!-- <button class="card-btn" type="button"></button> -->
+          </div>
+        </div>
       </div>
       <script type="module" src="./card-rotet.js"></script>
       <!-- <div class="card-container">
@@ -65,3 +63,15 @@
     </section>
   </body>
 </html>
+<script>
+  document.getElementById("btn").onclick = function () {
+    myFunction();
+  };
+  function open() {
+    console.log(111);
+  }
+  function myFunction() {
+    document.getElementById("image").style.WebkitTransitionDuration = "1s";
+    document.getElementById("image").style.webkitTransform = "rotateY(180deg)";
+  }
+</script>

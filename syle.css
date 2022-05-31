@@ -434,13 +434,5 @@ template {
   transform: rotateY(180deg);
 }
 
-.cart:hover .front {
-  transform: rotateY(180deg);
-}
-
-.cart:hover .back {
-  transform: rotateY(360deg);
-}
-
 
 
