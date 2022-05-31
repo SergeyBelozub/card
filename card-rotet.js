@@ -1,3 +1,4 @@
-$('#rotate').click(function(){
-    $(".card").toggleClass('flipped');
-  });
+$('button#test').click(function (e) {
+	e.preventDefault();
+	$(this).find('front.cart').toggleClass('active');
+});

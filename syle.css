@@ -442,15 +442,5 @@ template {
   transform: rotateY(360deg);
 }
 
-/* .card-btn:active .front {
-  transform: rotateY(180deg);
-}
-.card-btn:active .back {
-  transform: rotateY(360deg);
-} */
-/* .card-btn:active .front {
-  transform: rotateY(180deg);
-} */
-.card.flipped {
-  transform: rotateY(180deg);
-}
+
+
